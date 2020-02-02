@@ -1,6 +1,6 @@
 {
   "name": "@danieldietrich/object-builder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A generic functional object builder for TypeScript.",
   "keywords": [
     "builder pattern",
