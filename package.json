@@ -4,6 +4,7 @@
   "description": "A generic functional object builder for TypeScript.",
   "keywords": [
     "builder pattern",
+    "design pattern",
     "functional",
     "generic",
     "object builder",
