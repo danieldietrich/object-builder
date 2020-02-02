@@ -1,0 +1,54 @@
+{
+  "name": "@danieldietrich/object-builder",
+  "version": "0.0.0",
+  "description": "A generic functional object builder for TypeScript.",
+  "keywords": [
+    "builder pattern",
+    "functional",
+    "generic",
+    "object builder",
+    "typed",
+    "types",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -fr dist",
+    "build": "npm run clean && npm run lint  && tsc --project tsconfig.build.json",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "prepare": "npm test && npm run build",
+    "test": "jest --coverage",
+    "postinstall": "node -e \"console.log('\\u001b[35m\\u001b[1m🍑 Love object-builder? Please donate me a ☕️\\u001b[22m\\u001b[39m\\n > \\u001b[34mhttps://paypal.me/danieldietrich13\\u001b[0m')\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danieldietrich/object-builder"
+  },
+  "homepage": "https://github.com/danieldietrich/object-builder",
+  "bugs": "https://github.com/danieldietrich/object-builder/issues",
+  "author": {
+    "name": "Daniel Dietrich",
+    "email": "cafebab3@gmail.com",
+    "url": "https://danieldietrich.dev"
+  },
+  "funding": "https://github.com/sponsors/danieldietrich",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "codecov": "^3.6.4",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  }
+}
